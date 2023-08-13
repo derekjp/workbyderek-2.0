@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  gap: 0 8px
+}
+.link{
+  display: block;
+  border-radius: 6px;
+  color: var(--sidebar-text-color);
+  text-decoration: none;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08px;
+}
+/* .link:hover, */
+.active{
+  background: var(--sidebar-link-background-color--hover);
+}
+
