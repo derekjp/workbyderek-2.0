@@ -7,6 +7,7 @@
   --sidebar-text-color: #434343;
   --sidebar-link-background-color--hover: rgba(201, 201, 200, 0.60);
   --window-background-color: #ffffff;
+  --window-border: 1px solid #B4B6B5;
   --window-box-shadow: 0px 25px 30px 0px rgba(0, 0, 0, 0.35), 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   
   /* MEASUREMENTS */
@@ -19,8 +20,9 @@
     --sidebar-label-text-color: rgba(235, 235, 245, 0.60);
     --sidebar-icon-color: #0A84FF;
     --sidebar-text-color: #DFDEDF;
-    --sidebar-link-background-color--hover: rgba(201, 201, 200, 0.60);
+    --sidebar-link-background-color--hover: #424346;
     --window-background-color: #2A2B2C;
+    --window-border: 1px solid #555659;
     --window-box-shadow: 0px 25px 30px 0px rgba(0, 0, 0, 0.35), 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
     
   }
@@ -49,6 +51,10 @@ body {
   font-family: -apple-system-short-footnote
   font-family: -apple-system-tall-body */
 }
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
 #root{
   height: 100%;
   padding: 1rem;
@@ -59,6 +65,7 @@ body {
 #finder-window{
   background-color: var(--window-background-color);
   border-radius: 10px;
+  border: var(--window-border);
   box-shadow: var(--window-box-shadow);
   display: flex;
   overflow: hidden;
@@ -75,4 +82,11 @@ body {
 
 #window-main{
   padding: 2rem;
+}
+
+
+.grid{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
